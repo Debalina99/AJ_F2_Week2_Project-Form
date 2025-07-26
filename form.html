@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 400px;
+        }
+
+        button {
+            width: 200px;
+            height: 40px;
+            background-color: white;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 14px;
+            border-radius: 10px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        p {
+            margin: 0;
+        }
+        form{
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h2>Form</h2>
+        <div class="inputs">
+            <div class="section">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Example@email.com" id="email" class="email">
+                <p id="emailErr"></p>
+            </div>
+            <div class="section">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Your password" id="password" class="password" autocomplete="on">
+                <p id="passwordErr"></p>
+            </div>
+            <button type="submit" id="button">Submit</button>
+        </div>
+    </form>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
